@@ -1,0 +1,37 @@
+[project]
+name = "movie-review-spoiler-detection"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Timon", email = "Timon.Gartung@posteo.de" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "ipython",
+    "joblib",
+    "kagglehub[pandas-datasets]",
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "scikit-learn>=1.2",
+    "scipy",
+]
+
+[project.optional-dependencies]
+notebook = [
+    "shap",
+    "tabulate",
+]
+
+[project.scripts]
+movie-review-spoiler-detection = "movie_review_spoiler_detection:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+]
