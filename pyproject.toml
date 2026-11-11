@@ -12,6 +12,8 @@ dependencies = [
     "joblib",
     "kagglehub[pandas-datasets]",
     "matplotlib",
+    "names-dataset>=3.3.1",
+    "nltk",
     "numpy",
     "pandas",
     "scikit-learn>=1.2",
