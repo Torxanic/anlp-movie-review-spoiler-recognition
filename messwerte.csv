@@ -1,0 +1,30 @@
+Messgröße,Wert
+"3 · Accuracy (unbekannte Filme, TF-IDF, LogReg)",0.689
+"3 · Precision (unbekannte Filme, TF-IDF, LogReg)",0.424
+"3 · Recall (unbekannte Filme, TF-IDF, LogReg)",0.662
+"3 · F1 (unbekannte Filme, TF-IDF, LogReg)",0.517
+"3 · ROC-AUC (unbekannte Filme, TF-IDF, LogReg)",0.748
+3 · F1-Vorsprung auf „immer Spoiler“,+0.115  (+0.104 bis +0.126)
+3 · F1 mit Spoiler-Wort (zum Vergleich),0.528
+3 · ROC-AUC mit Spoiler-Wort (zum Vergleich),0.757
+"3 · F1, Training „nur dieses Genre“",0.501
+"3 · ROC-AUC, Training „nur dieses Genre“",0.740
+"3 · F1, Training „alle Genres“",0.498
+"3 · ROC-AUC, Training „alle Genres“",0.735
+"3 · F1, Training „nur dieser Film“",0.496
+"3 · ROC-AUC, Training „nur dieser Film“",0.748
+"3 · F1, Training „alle anderen Filme“",0.441
+"3 · ROC-AUC, Training „alle anderen Filme“",0.721
+"3 · F1, Training „alle Filme“",0.491
+"3 · ROC-AUC, Training „alle Filme“",0.740
+H1 · Handlungswörter mit positivem Gewicht,100%
+H1 · Bewertungswörter mit negativem Gewicht,77%
+H1 · p-Wert (Mann-Whitney-U),1.2e-10
+H2a · F1 nach Film − zufällig,+0.006  (p = 0.18)
+H2b · F1 ohne Namen − mit Namen (Zufällig),-0.001  (p = 0.60)
+H2b · F1 ohne Namen − mit Namen (Nach Film),+0.001  (p = 0.07)
+H2b · F1 Platzhalter − mit Namen (Zufällig),+0.001  (p = 0.64)
+H2b · F1 Platzhalter − mit Namen (Nach Film),+0.003  (p = 0.06)
+H3 · Fehlalarme mit killed/murder,72 %
+"H3 · Fehlalarme ohne, gleiche Länge",50 %
+H3 · Verhältnis,1.44  (1.35 bis 1.54)
