@@ -9,7 +9,7 @@ INHALT DIESES ORDNERS
                              (enthält bereits die Ausgaben aus unserem Lauf
                              mit dem vollen Datensatz)
   requirements.txt           benötigte Python-Pakete
-  data/example/              Beispieldaten (ca. 6 MB), siehe unten
+  data/example/              Beispieldaten (ca. 6 MB) und Plot-Hinweise, siehe unten
   figures/                   Abbildungen (300 dpi) und Ergebnistabellen (CSV)
                              aus unserem Lauf mit dem vollen Datensatz
 
@@ -44,9 +44,12 @@ AUSFÜHREN
     USE_FULL_DATASET = True    ganzer Datensatz aus data/
     USE_FULL_DATASET = False   Beispieldaten aus data/example/
 
-  Steht die Variable auf True, aber der große Datensatz fehlt, gibt das
-  Notebook einen Hinweis aus und nimmt automatisch die Beispieldaten.
-  Es läuft also auch ohne weitere Schritte durch.
+  Steht die Variable auf True, lädt das Notebook fehlende Dateien
+  IMDB_reviews.json und/oder IMDB_movie_details.json automatisch mit
+  KaggleHub nach data/ herunter. Dafür werden Internetzugriff und
+  gegebenenfalls eine Kaggle-Anmeldung benötigt. Bei einem Downloadfehler
+  wird eine Fehlermeldung angezeigt; es wird nicht still auf Beispieldaten
+  gewechselt.
 
   Mit den Beispieldaten dauert ein Durchlauf etwa 2 Minuten. Die Zahlen
   sind dann nur eine Demonstration des Vorgehens.
@@ -71,11 +74,14 @@ DATEN
     https://www.kaggle.com/datasets/rmisra/imdb-spoiler-dataset
 
   Der Datensatz ist etwa 970 MB groß und liegt deshalb nicht bei.
-  Für den vollen Lauf die beiden Dateien
+  Bei USE_FULL_DATASET = True lädt das Notebook fehlende Dateien automatisch
+  über KaggleHub aus dem Datensatz
+    rmisra/imdb-spoiler-dataset
+  nach data/ herunter. Es wird jeweils nur eine Datei geladen, wenn sie
+  fehlt; vorhandene Dateien bleiben unberührt. Alternativ können die beiden Dateien
     IMDB_reviews.json
     IMDB_movie_details.json
-  herunterladen und in den Ordner data/ legen (neben den Ordner example/).
-  Das Notebook erkennt sie automatisch.
+  manuell in den Ordner data/ gelegt werden.
 
   Beispieldaten in data/example/ (gleiches Format wie das Original):
     IMDB_reviews_example.json         3.200 Rezensionen
@@ -83,6 +89,14 @@ DATEN
   Auswahl mit Zufallsstartwert 42: 120 zufällige Filme mit je 20 zufälligen
   Rezensionen sowie 2 häufig rezensierte Filme mit je 400 Rezensionen
   (damit auch der Einzelfilm-Vergleich in Abschnitt 3.5 läuft).
+
+  wikipedia_plot_hints.json enthält KI-generierte Plot-Hinweise für
+  "The Godfather" (tt0068646). Sie wurden aus einem bereitgestellten
+  englischen Wikipedia-Plottext mit einem Prompt zur Extraktion von
+  Figuren, Namensvarianten, wichtigen Ereignissen und Suchbegriffen als
+  JSON erzeugt. Die KI erhielt keine Rezensionen oder Spoiler-Labels.
+  Das Feld "spoiler_sensitive" wird im Experiment nicht als Label benutzt.
+  Die Datei dient nur dem explorativen Plot-Hinweis-Experiment.
 
 
 VERWENDETE VERFAHREN
