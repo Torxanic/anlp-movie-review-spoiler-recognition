@@ -1,0 +1,145 @@
+{
+  "characters": [
+    {
+      "name": "Michael Corleone",
+      "aliases": ["Michael", "Don Corleone"]
+    },
+    {
+      "name": "Don Vito Corleone",
+      "aliases": ["Vito", "Vito Corleone"]
+    },
+    {
+      "name": "Santino Corleone",
+      "aliases": ["Santino", "Sonny"]
+    },
+    {
+      "name": "Tom Hagen",
+      "aliases": ["Hagen"]
+    },
+    {
+      "name": "Connie",
+      "aliases": []
+    },
+    {
+      "name": "Carlo Rizzi",
+      "aliases": ["Carlo"]
+    },
+    {
+      "name": "Kay Adams",
+      "aliases": ["Kay"]
+    },
+    {
+      "name": "Johnny Fontane",
+      "aliases": ["Fontane"]
+    },
+    {
+      "name": "Jack Woltz",
+      "aliases": ["Woltz"]
+    },
+    {
+      "name": "Virgil Sollozzo",
+      "aliases": ["The Turk", "Virgil \"The Turk\" Sollozzo", "Sollozzo"]
+    },
+    {
+      "name": "Luca Brasi",
+      "aliases": []
+    },
+    {
+      "name": "Bruno Tattaglia",
+      "aliases": ["Bruno"]
+    },
+    {
+      "name": "Captain McCluskey",
+      "aliases": ["McCluskey"]
+    },
+    {
+      "name": "Apollonia Vitelli",
+      "aliases": ["Apollonia"]
+    },
+    {
+      "name": "Moe Greene",
+      "aliases": ["Greene", "Moe"]
+    },
+    {
+      "name": "Fredo",
+      "aliases": []
+    },
+    {
+      "name": "Barzini",
+      "aliases": []
+    },
+    {
+      "name": "Anthony",
+      "aliases": []
+    },
+    {
+      "name": "Salvatore Tessio",
+      "aliases": ["Tessio"]
+    },
+    {
+      "name": "Clemenza",
+      "aliases": []
+    },
+    {
+      "name": "Neri",
+      "aliases": []
+    }
+  ],
+  "key_events": [
+    {
+      "description": "Jack Woltz wakes up to find the severed head of his racehorse Khartoum in his bed after refusing to give Johnny Fontane a film role.",
+      "terms": ["Woltz", "Khartoum", "severed head", "racehorse", "Fontane", "film role"],
+      "spoiler_sensitive": false
+    },
+    {
+      "description": "Luca Brasi is garroted by the Tattaglia family while attempting to infiltrate Sollozzo's operation.",
+      "terms": ["Luca Brasi", "garrote", "Tattaglia", "Sollozzo"],
+      "spoiler_sensitive": true
+    },
+    {
+      "description": "Don Vito Corleone is gunned down and hospitalized after refusing to protect Sollozzo's drug trade.",
+      "terms": ["Vito", "gunned down", "hospital", "Sollozzo"],
+      "spoiler_sensitive": true
+    },
+    {
+      "description": "Michael shoots and kills Sollozzo and Captain McCluskey at a restaurant meeting before fleeing to Sicily.",
+      "terms": ["Michael", "Sollozzo", "McCluskey", "restaurant", "Sicily"],
+      "spoiler_sensitive": true
+    },
+    {
+      "description": "Sonny is ambushed and murdered at a highway toll booth while rushing to defend Connie from Carlo's abuse.",
+      "terms": ["Sonny", "ambushed", "murdered", "toll booth", "Connie", "Carlo"],
+      "spoiler_sensitive": true
+    },
+    {
+      "description": "Michael's Sicilian wife, Apollonia, is killed in a car bombing meant for Michael.",
+      "terms": ["Apollonia", "Sicily", "car bombing", "Michael"],
+      "spoiler_sensitive": true
+    },
+    {
+      "description": "Vito dies of a heart attack while playing with his grandson Anthony.",
+      "terms": ["Vito", "dies", "heart attack", "Anthony"],
+      "spoiler_sensitive": true
+    },
+    {
+      "description": "Salvatore Tessio reveals his betrayal by offering to broker a meeting with Barzini at Vito's funeral and is led off to be executed.",
+      "terms": ["Tessio", "betrayal", "Barzini", "funeral", "executed"],
+      "spoiler_sensitive": true
+    },
+    {
+      "description": "During his nephew's baptism, Michael's hitmen simultaneously assassinate Moe Greene and the heads of the other New York Families.",
+      "terms": ["baptism", "hitmen", "assassinating", "Moe Greene", "New York Families"],
+      "spoiler_sensitive": true
+    },
+    {
+      "description": "Carlo confesses to conspiring with Barzini to lure Sonny into his fatal ambush and is subsequently garroted by Clemenza.",
+      "terms": ["Carlo", "confession", "Barzini", "Sonny", "Clemenza", "garrotes"],
+      "spoiler_sensitive": true
+    },
+    {
+      "description": "Michael lies to Kay about killing Carlo, and Kay witnesses the capos kiss Michael's hand and address him as Don Corleone before the door is closed on her.",
+      "terms": ["Kay", "Michael", "Clemenza", "Don Corleone", "Neri", "door", "lie"],
+      "spoiler_sensitive": true
+    }
+  ]
+}
