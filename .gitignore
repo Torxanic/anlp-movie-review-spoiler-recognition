@@ -6,3 +6,6 @@ __pycache__/
 /cache/
 /outputs/
 /Gruppe_f/code/figures
+/Gruppe_f/code/data/IMDB_movie_details.json
+/Gruppe_f/code/data/IMDB_reviews.json
+Gruppe_f/code/data/.complete
