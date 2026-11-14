@@ -9,7 +9,7 @@ INHALT DIESES ORDNERS
                              (enthält bereits die Ausgaben aus unserem Lauf
                              mit dem vollen Datensatz)
   requirements.txt           benötigte Python-Pakete
-  data/example/              Beispieldaten (ca. 6 MB) und Plot-Hinweise, siehe unten
+  data/example/              Beispieldaten (ca. 6 MB), siehe unten
   figures/                   Abbildungen (300 dpi) und Ergebnistabellen (CSV)
                              aus unserem Lauf mit dem vollen Datensatz
 
@@ -89,15 +89,6 @@ DATEN
   Auswahl mit Zufallsstartwert 42: 120 zufällige Filme mit je 20 zufälligen
   Rezensionen sowie 2 häufig rezensierte Filme mit je 400 Rezensionen
   (damit auch der Einzelfilm-Vergleich in Abschnitt 3.5 läuft).
-
-  wikipedia_plot_hints.json enthält KI-generierte Plot-Hinweise für
-  "The Godfather" (tt0068646). Sie wurden aus einem bereitgestellten
-  englischen Wikipedia-Plottext mit einem Prompt zur Extraktion von
-  Figuren, Namensvarianten, wichtigen Ereignissen und Suchbegriffen als
-  JSON erzeugt. Die KI erhielt keine Rezensionen oder Spoiler-Labels.
-  Das Feld "spoiler_sensitive" wird im Experiment nicht als Label benutzt.
-  Die Datei dient nur dem explorativen Plot-Hinweis-Experiment.
-
 
 VERWENDETE VERFAHREN
 
