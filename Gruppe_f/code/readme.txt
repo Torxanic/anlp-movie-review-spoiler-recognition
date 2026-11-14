@@ -8,8 +8,10 @@ INHALT DIESES ORDNERS
   spoiler_erkennung.ipynb    Jupyter-Notebook mit dem gesamten Code
                              (enthält bereits die Ausgaben aus unserem Lauf
                              mit dem vollen Datensatz)
+  build_us_name_list.py     Skript zur Reproduktion der Namenslisten
   requirements.txt           benötigte Python-Pakete
   data/example/              Beispieldaten (ca. 6 MB), siehe unten
+  data/us_name_lists.csv     kompakte Namenslisten für die Figurenheuristik
   figures/                   Abbildungen (300 dpi) und Ergebnistabellen (CSV)
                              aus unserem Lauf mit dem vollen Datensatz
 
@@ -89,6 +91,37 @@ DATEN
   Auswahl mit Zufallsstartwert 42: 120 zufällige Filme mit je 20 zufälligen
   Rezensionen sowie 2 häufig rezensierte Filme mit je 400 Rezensionen
   (damit auch der Einzelfilm-Vergleich in Abschnitt 3.5 läuft).
+
+NAMENSLISTEN REPRODUZIEREN
+
+  Die Datei data/us_name_lists.csv enthält je 1.000 Vornamen aus den
+  SSA-Kategorien F und M sowie die 1.000 häufigsten Nachnamen aus dem
+  US Census 2010. Die Vornamen-Häufigkeiten sind für die Jahre 1880–2024
+  je Name und Kategorie aufsummiert. Bei Gleichständen entscheidet die
+  alphabetische Reihenfolge; dadurch ist die Auswahl reproduzierbar.
+
+  Zum Neuerstellen in einer PowerShell im Ordner code/ ausführen:
+
+    python build_us_name_list.py
+
+  Das Skript benötigt keine zusätzlichen Python-Pakete, aber Internetzugriff.
+  Es lädt bei Bedarf die öffentlichen Quelldateien herunter und speichert
+  sie außerhalb des Abgabeordners im Cache:
+
+    %LOCALAPPDATA%\movie-review-spoiler-recognition\name_sources\
+
+  Verwendete Quellen:
+    SSA Baby Names
+      https://www.ssa.gov/oact/babynames/
+    US Census 2010 Surnames
+      https://www.census.gov/topics/population/genealogy/data/2010_surnames.html
+
+  Ein API-Key ist nicht erforderlich. Die fertige CSV ist etwa 150 KB groß.
+  Falls die Downloads fehlschlagen, können die Archive manuell von den Quellen
+  geladen und mit den Dateinamen ssa_baby_names.zip und census_2010_surnames.zip
+  in %LOCALAPPDATA%\movie-review-spoiler-recognition\name_sources\ abgelegt
+  werden. Unter Windows ist %LOCALAPPDATA% normalerweise
+  C:\Users\<Benutzername>\AppData\Local.
 
 VERWENDETE VERFAHREN
 
